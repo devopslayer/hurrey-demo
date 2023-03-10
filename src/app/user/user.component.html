@@ -1,0 +1,10 @@
+<!-- <p>user works!</p> -->
+<div class="container">
+    <h2>
+        What's your name?
+    </h2>
+    <div>
+        <input type="text" placeholder="Enter your Name" #uname autocomplete="off" (input)="!uname">
+        <button type="submit" routerLink="/user-avatar" [disabled]="uname.value == ''" (click)="onSubmit(uname.value)">Next</button>
+    </div>
+</div>

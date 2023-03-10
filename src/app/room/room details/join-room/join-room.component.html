@@ -1,0 +1,12 @@
+<!-- <p>join-room works!</p> -->
+
+<div class="container">
+    <div class="divimg">
+        <span class="imgli"><img width="80px" height="80px" src="assets/Images/avatar/ured.png" alt="avatar 1"> <h2>{{name}}</h2></span>
+    </div>
+    <div>
+        <h3>Type room code below</h3>
+        <input type="text" maxlength="6" placeholder="Enter Room Code" #rcode autocomplete="off" (input)="!rcode">
+        <button (click)="onJoin()" [disabled]="rcode.value == ''">Join</button>
+    </div>
+</div>

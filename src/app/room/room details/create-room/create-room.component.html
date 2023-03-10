@@ -1,0 +1,16 @@
+<!-- <p>create-room works!</p> -->
+
+<div class="container">
+    <div class="divimg">
+        <span class="imgli"><img width="80px" height="80px" src="assets/Images/avatar/ured.png" alt="avatar 1"> <h2>{{name}}</h2></span>
+    </div>
+    <div class="divimg">
+        <h3>Room Name</h3>
+        <input type="text" maxlength="30" #rname autocomplete="off" (input)="!rname">
+
+        <h3>No. of Players</h3>
+        <input type="number" #rpname autocomplete="off" (input)="!rpname">
+
+        <button (click)="onCreate()" [disabled]="rname.value == '' || rpname.value == ''">Create</button>
+    </div>
+</div>

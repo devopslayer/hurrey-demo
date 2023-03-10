@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body {
+    background: url('/assets/Images/background/HBG.png');
+}
+
+h2, h3 {
+    margin: 10px;
+}
+
+.container {
+    display: block;
+    float: center;
+    text-align: center;
+}
+
+.container .divimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: center;
+    text-align: center;
+    margin: 10px;
+    padding: 40px;
+}
+
+.container .imgHolder{
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgHolder ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgHolder ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.imgHolder ul li img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    /* filter: grayscale(100%); */
+}
+
+input {
+    background-color: transparent;
+    padding: 10px;
+    margin: 8px;
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(#141923,#141923) padding-box,linear-gradient(to right,#7b72cc,#dc0078,#3871d6) border-box;
+    border: 2px solid transparent;
+    text-decoration: none;
+}
+
+button {
+    background-color: #3a3a3a;
+    color: white;
+    border: 1.6px solid #b0b0b0;
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+    background: linear-gradient(#141923,#141923) padding-box,linear-gradient(to right,#7b72cc,#dc0078,#3871d6) border-box;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin: 8px;
+}
+
+button:disabled {
+    background-color: #3a3a3a;
+    color: white;
+    border: 1.6px solid #b0b0b0;
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+    cursor: default;
+}
+
+.imgli {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.imgli img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+}

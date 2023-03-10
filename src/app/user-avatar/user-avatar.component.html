@@ -1,0 +1,30 @@
+<!-- <p>user-avatar works!</p> -->
+<div class="container">
+    <h2>Hello <strong>{{name}}</strong></h2>
+    <h3>Choose your avatar</h3>
+    <div>
+        <div class="imgHolder">
+            <ul>
+                <li>
+                    <img width="80px" height="80px" src="assets/Images/avatar/uwhite.png" alt="avatar 1">
+                </li>
+                <li>
+                    <img width="80px" height="80px" src="assets/Images/avatar/ured.png" alt="avatar 2">
+                </li>
+                <li>
+                    <img width="80px" height="80px" src="assets/Images/avatar/uyellow.png" alt="avatar 3">
+                </li>
+                <li>
+                    <img width="80px" height="80px" src="assets/Images/avatar/upurple.png" alt="avatar 4">
+                </li>
+            </ul>
+        </div>
+
+        <button type="submit" routerLink="/room" (click)="onSelect()">Next</button>
+
+        <!-- Example -->
+        <!-- <button type="submit" *ngIf="avatar" (click)="avatar = false">enable</button>
+
+        <button type="submit" *ngIf="!avatar" (click)="avatar = true">disable</button> -->
+    </div>
+</div>
